@@ -4,7 +4,6 @@
 	var base = 120 + LFNoise1.kr(0.05!3, 40, 60).mean;
 	var fm1 = SinOsc.ar(LFNoise0.kr(0.2).range(20,80), 0, LFNoise1.kr(0.15, 40, 70));
 	var fm2 = SinOsc.ar(LFNoise0.kr(0.3).range(50,100), 0, LFNoise1.kr(0.2, 30, 60));
-
 	// Drone oscillators
 	var drone = Mix.fill(5, { |i| Saw.ar(base * (0.5 + i*0.25) + fm1 + fm2, 0.08) });
 

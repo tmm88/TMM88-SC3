@@ -30,6 +30,7 @@
 
 	// Multi-layered granular texture
 	var noiseAtmo = Mix.ar([
+
 		GrainSin.ar(2, Impulse.kr(LFNoise1.kr(0.25).range(1,20)),
 			LFNoise1.kr(0.12).range(0.1, 0.35),
 			LFNoise1.kr(0.4).range(80,2500),
